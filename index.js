@@ -17,7 +17,7 @@ function titleCased(){
   
   let result = words.map(function(sentence){
     let capitalizedWords = []
-    for (word of sentence) {
+    for (let word of sentence) {
       capitalizedWords.push(word[0][0].toUpperCase() + word.slice(1));
     }
     return capitalizedWords.join(" ");})
